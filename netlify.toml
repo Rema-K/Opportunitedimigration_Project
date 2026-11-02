@@ -1,0 +1,9 @@
+# Netlify cannot execute PHP. The site is served as static HTML from `public/`,
+# and the enquiry form posts to a Netlify Function that stores each enquiry in Netlify Blobs (store "enquiries").
+[build]
+  base = "."
+  publish = "public"
+  command = ""
+
+[functions]
+  directory = "netlify/functions"
